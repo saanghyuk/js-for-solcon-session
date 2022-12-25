@@ -1,0 +1,26 @@
+[class] {
+  color: #5f62ff;
+}
+
+div[class] {
+  color: orange;
+}
+
+[status] {
+  padding: 5px 10px;
+}
+
+[status="대기중"] {
+  background-color: #ff6767;
+  color: #ffffff;
+}
+
+[status="진행중"] {
+  background-color: #5f62ff;
+  color: #ffffff;
+}
+
+[status="완료"] {
+  background-color: #07c456;
+  color: #ffffff;
+}

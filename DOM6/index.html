@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Tai</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+  <p class="hi" haeun="true">Hello, World!</p>
+  <div class="hello" haeun="false">
+    안녕하세요.
+  </div>
+  <p class="hi" data-haeun="true">Hello, World!</p>
+  <div class="hello" data-haeun="false">
+    안녕하세요.
+  </div>
+  <p>할 일 : <b class="hello" field="title"></b></p>
+  <p>담당자 : <b field="manager"></b></p>
+  <p>상태 : <b field="status"></b></p>
+  <div>
+    상태 변경:
+    <button class="btn" status="대기중">대기중</button>
+    <button class="btn" status="진행중">진행중</button>
+    <button class="btn" status="완료">완료</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
