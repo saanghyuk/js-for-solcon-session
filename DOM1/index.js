@@ -1,9 +1,0 @@
-// // DOM (Document Object Model)
-console.log(document);
-console.log(typeof document);
-console.dir(document);
-
-// DOM (Document Object Model)
-const title = document.querySelector("#title");
-console.dir(title);
-title.style.color = "red";
