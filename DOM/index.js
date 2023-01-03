@@ -1,4 +1,2 @@
-// DOM (Document Object Model)
-const title = document.querySelector("#title");
-console.log(title);
-title.style.color = "red";
+const myTag = document.querySelectorAll(".color-btn");
+console.log(myTag);
