@@ -1,17 +1,14 @@
 let btn = document.querySelector("#myBtn");
 
-let myInput = document.querySelector("#myInput");
+function event1() {
+  console.log("Hi Javascript!");
+}
 
-btn.onclick = function() {
-  console.log("Hi Tai!");
-};
+function event2() {
+  console.log("Hi again!");
+}
 
-// 기존을 덮어써버림
-btn.onclick = function() {
-  console.log("Hi Again!");
-};
+btn.addEventListener("click", event1);
+btn.addEventListener("click", event2);
 
-myInput.addEventListener("keydown", function(e) {
-  console.log(e);
-  console.log("keydown event!");
-});
+btn.removeEventListener("click", event2);

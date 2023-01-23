@@ -1,31 +1,33 @@
+HTML
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="ko">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
-
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href=".css">
+  <title>예방접종</title>
 </head>
 
 <body>
-  <script type="text/javascript" src="./practice.js"></script>
-  <h1>TEST PAGE
 
-  </h1>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <div>
+    <h1 class="title">예방접종센터 찾기</h1>
+    <h2>찾고 싶은 지역을 입력해주세요 예시: 서울특별시 강남구</h2> <input id='name' onchange='printName()' />
 
+    <table cellpadding="2" cellspacing="2" border="1" bgcolor="#dfdfdf" width="100%" align="left">
+      <thead>
+        <tr>
+          <th width="30%">센터명</th>
+          <th width="20%">시설명</th>
+          <th width="40%">주소</th>
+          <th width="20%">사무실전화번호</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
 
-
+  </div>
+  <script src="covid192.js"></script>
 </body>
 
 </html>

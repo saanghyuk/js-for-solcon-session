@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KR Box Office Movies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <style>
+    #selectBox {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">
+        <h1>KR Box Office Movies</h1>
+      </span>
+    </div>
+  </nav>
+  <nav class="navbar bg-light">
+    <form class="container-fluid justify-content-start">
+      <button class="btn btn-outline-success me-2" type="button" onClick="location.href='1-1.html'">Main</button>
+      <button class="btn btn-outline-success me-2" type="button" onClick="location.href='1-3.html'">지역 별 영화 순위</button>
+      <button class="btn btn-outline-success me-2" type="button" onClick="location.href='1-4.html'"">국내/외 영화 순위</button>
+        </form>
+      </nav>
+    <div id=" selectBox">
+        <input id="input_date" type="date" class="form-control" /><br />
+        <input id="input_submit" type="submit" onclick="getNewResult()" value="조회하기" class="form-control" />
+        </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">전체 영화 순위</th>
+              <th scope="col">다양성 영화 순위</th>
+              <th scope="col">상업 영화 순위</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td id="movie-1"></td>
+              <td id="vmovie-1"></td>
+              <td id="smovie-1"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td id="movie-2"></td>
+              <td id="vmovie-2"></td>
+              <td id="smovie-2"></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td id="movie-3"></td>
+              <td id="vmovie-3"></td>
+              <td id="smovie-3"></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td id="movie-4"></td>
+              <td id="vmovie-4"></td>
+              <td id="smovie-4"></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td id="movie-5"></td>
+              <td id="vmovie-5"></td>
+              <td id="smovie-5"></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td id="movie-6"></td>
+              <td id="vmovie-6"></td>
+              <td id="smovie-6"></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td id="movie-7"></td>
+              <td id="vmovie-7"></td>
+              <td id="smovie-7"></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td id="movie-8"></td>
+              <td id="vmovie-8"></td>
+              <td id="smovie-8"></td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td id="movie-9"></td>
+              <td id="vmovie-9"></td>
+              <td id="smovie-9"></td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td id="movie-10"></td>
+              <td id="vmovie-10"></td>
+              <td id="smovie-10"></td>
+            </tr>
+          </tbody>
+        </table>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+          crossorigin="anonymous"></script>
+        <script src="1-1.js"></script>
+</body>
+
+</html>
