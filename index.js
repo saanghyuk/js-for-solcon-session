@@ -1,19 +1,11 @@
-function closure() {
-  let cnt = 0;
-  function cntPlus() {
-    cnt = cnt + 1;
-  }
-
-  function printCnt() {
-    console.log(cnt);
-  }
-
-  return cntPlus;
+function* fn() {
+  console.log(1);
+  yield 1;
+  console.log(2);
+  yield 2;
+  console.log(3);
+  yield 3;
+  return "finish";
 }
 
-const cntClosure = closure();
-
-console.log(cntClosure);
-cntClosure();
-
-console.log(cnt);
+const a = fn();
