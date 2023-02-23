@@ -1,11 +1,13 @@
-function* fn() {
-  console.log(1);
-  yield 1;
-  console.log(2);
-  yield 2;
-  console.log(3);
-  yield 3;
-  return "finish";
+async function fetchAndPrint() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const result = await response.text();
+    console.log(result);
+  } catch (e) {
+    alert("Sorry");
+  } finally {
+    alert("No Sorry");
+  }
 }
 
-const a = fn();
+fetchAndPrint();
